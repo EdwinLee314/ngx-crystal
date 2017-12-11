@@ -124,6 +124,7 @@
     "component-selector": [
       true,
       "element",
+      "ed",
       "app",
       "kebab-case"
     ],

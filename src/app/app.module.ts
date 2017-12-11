@@ -1,8 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
+import { CoreModule } from './@core/core.module';
+import { ThemeModule } from './@theme/theme.module';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 
 @NgModule({
@@ -10,9 +19,19 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpModule,
+    AppRoutingModule,
+
+    NgZorroAntdModule.forRoot(),
+
+    ThemeModule.forRoot(),
+    CoreModule.forRoot(),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+  ],
 })
 export class AppModule { }
