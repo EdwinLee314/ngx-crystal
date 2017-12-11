@@ -1,7 +1,8 @@
 # Ngx-Crystal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
-This project was inspired by <a target="_blank" href="http://akveo.com/ngx-admin/">Ngx-admin</a> and <a target="_blank" href="https://cipchk.github.io/ng-alain/" >Ng-alain</a>.
+
+This project was inspired by [Ngx-admin](http://akveo.com/ngx-admin/) and [Ng-alain](https://cipchk.github.io/ng-alain/).
 
 ## Purpose
 
@@ -34,4 +35,4 @@ ng serve
 
 ## License
 
-The MIT License (see the [LICENSE](https://github.com/cipchk/ng-alain/blob/master/LICENSE) file for the full text)
+The MIT License (see the [LICENSE](https://github.com/EdwinLee314/ngx-crystal/blob/master/LICENSE) file for the full text)
